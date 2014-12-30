@@ -1,3 +1,12 @@
+var db;
+ document.addEventListener("deviceready", onDeviceReady, false);
+            function onDeviceReady() 
+            {
+                db = window.openDatabase('agendaDB', '1.0', 'agendaDB', 200000);
+                angular.bootstrap(document, ['agendaApp']);
+            }
+
+
 
 var agenda = angular.module('agendaApp',['ngRoute']);
         
@@ -145,15 +154,8 @@ var agenda = angular.module('agendaApp',['ngRoute']);
         });       
 
         // Creación de DB
-        var db;
-            document.addEventListener("deviceready", onDeviceReady, false);
-            function onDeviceReady() 
-            {
-                db = window.openDatabase('agendaDB', '1.0', 'agendaDB', 200000);
-                angular.bootstrap(document, ['app']);
-            }
-
-
+       
+           
                                   
                                   
 
