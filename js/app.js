@@ -81,9 +81,9 @@ var agenda = angular.module('agendaApp',['ngRoute']);
 		
                         tx.executeSql(sql);
 
-                        tx.executeSql("INSERT INTO agenda_curso (id,nombre,apellidos,telefono,categoria,foto,email,peticion,ciudad,direccion,genero) VALUES (1,'José','Pérez','+34566222666','amigo','','paco@paco.com','Hogar','Tunja','calle falsa 123','Hombre')");
-                        tx.executeSql("INSERT INTO agenda_curso (id,nombre,apellidos,telefono,categoria,foto,email,peticion,ciudad,direccion,genero) VALUES (2,'Siro','González','+34555434567','familia','','siro@test.com','Finanzas','Duitama','calle falsa 123','Hombre')");
-                        tx.executeSql("INSERT INTO agenda_curso (id,nombre,apellidos,telefono,categoria,foto,email,peticion,ciudad,direccion,genero) VALUES (3,'Julio','Rodríguez','+34756222666','trabajo','','julio@test.com','Santidad','Tunja','calle falsa 123','Hombre')");
+                        tx.executeSql("INSERT INTO  AGENDA (id,nombre,apellidos,telefono,categoria,foto,email,peticion,ciudad,direccion,genero) VALUES (1,'José','Pérez','+34566222666','amigo','','paco@paco.com','Hogar','Tunja','calle falsa 123','Hombre')");
+                        tx.executeSql("INSERT INTO  AGENDA (id,nombre,apellidos,telefono,categoria,foto,email,peticion,ciudad,direccion,genero) VALUES (2,'Siro','González','+34555434567','familia','','siro@test.com','Finanzas','Duitama','calle falsa 123','Hombre')");
+                        tx.executeSql("INSERT INTO  AGENDA (id,nombre,apellidos,telefono,categoria,foto,email,peticion,ciudad,direccion,genero) VALUES (3,'Julio','Rodríguez','+34756222666','trabajo','','julio@test.com','Santidad','Tunja','calle falsa 123','Hombre')");
                                         tx.executeSql('CREATE TABLE IF NOT EXISTS AGENDA(id integer primary key, nombres text, apellidos text, edad int, peticion text)');
                                         tx.executeSql()
                 });
