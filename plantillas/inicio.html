@@ -1,15 +1,25 @@
 
         
-     <br>
-<div class="card">
+
+ <input type="search" ng-model="buscar" placeholder="Buscar..." style="margin:5px"/>
+ 
+<div class="card" style="height:100%">
     <div style="margin-top: 10px; margin-left:10px; margin-right:10px;">
         
-        <input type="search" ng-model="buscar" placeholder="Buscar..."/>
- </div>
+       
       <ul class="table-view">
-        <li class="table-view-cell" ng-repeat="animal in animales | filter:buscar"><a class="push-right" href="#">
+        <li class="table-view-cell" ng-repeat="animal in animales | filter:buscar"><a class="push-right" href="#/inicio">
               <strong>{{ animal }}</strong>
             </a>
         </li>
       </ul>
+        
+        
+    <ul class="table-view" ng-controller="todoSqliteCtrl" ng-init="populate()">
+        <li class="table-view-cell" ng-repeat="item in items | filter:buscar"><a class="push-right" href="#/inicio">
+              <strong>{{item.id}}</strong>
+            </a>
+        </li>
+      </ul>    
+        
 </div>

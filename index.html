@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="zooApp">
+<html ng-app="agendaApp">
 <head >
 	<meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -15,18 +15,18 @@
     
     <!-- Include the compiled Ratchet CSS -->
     <link href="css/ratchet.css" rel="stylesheet">
-
+    <link href="css/ratchet-theme-ios.min.css" rel="stylesheet">
     <!-- Include the compiled Ratchet JS -->
     <script src="js/ratchet.min.js"></script>
 </head>
 <body ng-controller="controllerAnimales">
      <!-- Incluimos el menu -->
-  <div ng-include src="'plantillas/menu.html'"></div>
-   <!-- Incluimos el pie -->
- <div ng-include src="'plantillas/menu-bottom.html'"></div>
+  <div ng-include src="'plantillas/menu.html'" style="margin: 10px"></div>
+   <!-- Incluimos el pie 
+ <div ng-include src="'plantillas/menu-bottom.html'"></div>-->
    
   <!-- Contenido de la app -->
-    <div class="content" style="padding-top:50px" >
+    <div class="content" style="padding-top:50px; height: 100%" >
     <div ng-view></div>
     </div>
   
